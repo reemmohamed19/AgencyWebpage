@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Web Agency</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body{color:#222;}
+    .btn-brand{background:#007bff;color:#fff;border:none}
+    .btn-brand:hover{background:#0056b3;}
+    .hero{padding:5rem 0 3rem;}
+    .hero h1{font-weight:700;line-height:1.1;}
+    .hero p{color:#555;}
+    .hero .hero-img{border-radius:.5rem;object-fit:cover;width:100%;height:100%;}
+    .services{background:#f8f9fa;}
+    .service-card{background:#fff;border:1px solid #ddd;border-radius:.75rem;transition:transform .2s ease,box-shadow .2s ease;}
+    .service-card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+    .alt-row{padding:4rem 0}
+    .circle-img{width:160px;height:160px;object-fit:cover;border-radius:50%;}
+    .clients{background:#f8f9fa;}
+    .clients .logo{opacity:.7;transition:opacity .2s}
+    .clients .logo:hover{opacity:1}
+    .cta{background:#007bff;padding:3rem 0;color:#fff}
+    footer{background:#f1f1f1}
+    footer a{color:#555;text-decoration:none}
+    footer a:hover{color:#000}
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Web Agency</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-sm btn-dark rounded-pill" href="#">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-5 mb-3">We Build Modern Websites<br>for Your Business</h1>
+          <p class="mb-4">Our team crafts fast, responsive, and user‑friendly websites that help you grow online.</p>
+          <div class="d-flex gap-3">
+            <a href="#contact" class="btn btn-brand px-4 py-2 rounded-1">Start Your Project</a>
+            <a href="#portfolio" class="btn btn-outline-dark px-4 py-2 rounded-1">See Portfolio</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="hero-img" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop" alt="Office team working">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section class="services py-5" id="services">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h5 class="text-uppercase text-muted mb-1">Services</h5>
+        <p class="mb-0 small text-secondary">What we can do for you</p>
+      </div>
+
+      <div class="row g-3 g-md-4 mt-1">
+        <div class="col-6 col-lg-3">
+          <div class="p-4 text-center service-card h-100">
+            <i class="bi bi-brush display-6"></i>
+            <h6 class="mt-3 mb-1">Web Design</h6>
+            <p class="small text-secondary mb-0">Clean and modern website designs.</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="p-4 text-center service-card h-100">
+            <i class="bi bi-code-slash display-6"></i>
+            <h6 class="mt-3 mb-1">Development</h6>
+            <p class="small text-secondary mb-0">Custom websites and applications.</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="p-4 text-center service-card h-100">
+            <i class="bi bi-cart display-6"></i>
+            <h6 class="mt-3 mb-1">E‑Commerce</h6>
+            <p class="small text-secondary mb-0">Online stores with secure checkout.</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="p-4 text-center service-card h-100">
+            <i class="bi bi-graph-up display-6"></i>
+            <h6 class="mt-3 mb-1">SEO & Marketing</h6>
+            <p class="small text-secondary mb-0">Boost your visibility and reach more clients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container">
+    <div class="alt-row row align-items-center g-4">
+      <div class="col-md-6">
+        <small class="text-uppercase text-muted">About Us</small>
+        <h3 class="mt-2">We are a passionate web agency with 10+ years of experience.</h3>
+        <p class="text-secondary">Our mission is to help businesses thrive online with stunning websites and smart digital strategies.</p>
+      </div>
+      <div class="col-md-6 text-md-end text-center">
+        <img class="circle-img" src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=800&auto=format&fit=crop" alt="Team at work" />
+      </div>
+    </div>
+
+    <div class="alt-row row align-items-center g-4 flex-md-row-reverse">
+      <div class="col-md-6">
+        <small class="text-uppercase text-muted">Why Choose Us</small>
+        <h3 class="mt-2">We deliver projects on time and with quality.</h3>
+        <p class="text-secondary">Clients trust us because we combine creativity, technology, and marketing into one solution.</p>
+      </div>
+      <div class="col-md-6 text-md-start text-center">
+        <img class="circle-img" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop" alt="Laptop workspace" />
+      </div>
+    </div>
+
+    <div class="alt-row row align-items-center g-4">
+      <div class="col-md-6">
+        <small class="text-uppercase text-muted">Our Goal</small>
+        <h3 class="mt-2">Helping your business succeed online.</h3>
+        <p class="text-secondary">From small startups to large enterprises, we create solutions that fit your vision.</p>
+      </div>
+      <div class="col-md-6 text-md-end text-center">
+        <img class="circle-img" src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?q=80&w=800&auto=format&fit=crop" alt="Happy client" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section class="clients py-5">
+    <div class="container">
+      <div class="row row-cols-2 row-cols-md-5 g-4 justify-content-center">
+        <div class="col text-center"><span class="logo">Client A</span></div>
+        <div class="col text-center"><span class="logo">Client B</span></div>
+        <div class="col text-center"><span class="logo">Client C</span></div>
+        <div class="col text-center"><span class="logo">Client D</span></div>
+        <div class="col text-center"><span class="logo">Client E</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <h3 class="mb-0">Ready to launch your website?</h3>
+        <a href="#contact" class="btn btn-light px-4 py-2 rounded-1">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5>My Web Agency</h5>
+          <p class="text-secondary">We design and develop websites that help your business grow.</p>
+          <div class="d-flex gap-3">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="mb-3">Company</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6 class="mb-3">Services</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">E‑Commerce</a></li>
+            <li><a href="#">SEO</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3" id="contact">
+          <h6 class="mb-3">Contact</h6>
+          <ul class="list-unstyled small">
+            <li>info@mywebagency.com</li>
+            <li>+20 111 222 3333</li>
+            <li>Cairo, Egypt</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-top mt-4 pt-3 small text-secondary">© <span id="year"></span> My Web Agency. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
